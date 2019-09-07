@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+html,body{
+  padding: 0px;
+  margin: 0;
+  background-color: #2c3e50;
+  font-family: Poppins;
+
+}
+
+#btntxt{
+  font-size: 150%;
+  color: #f1f1f1;
+}
+
+button{
+  font-size: 70%;
+
+  border: none;
+  border-radius: 8px;
+  padding: 7px;
+  margin: 0px 5px;
+  transition: .5s;
+}
+
+button:hover{
+  background-color: #10ac84;
+  color: #f1f1f1;
+}
+
+#onestep:hover{
+  background-color: #341f97;
+  color: #f1f1f1;
+}
+
+#reload:hover{
+  background-color: red;
+  color: #f1f1f1;
+}
+
+#innermain{
+  top: 50%;
+  left: 50%;
+  transform: translate(40%,70%);
+  background: none;
+  padding: 20px;
+}
+
+#logo{
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+  position: absolute;
+  animation: fill 0.5s ease forwards 2.8s;
+}
+
+#logo path:nth-child(1){
+  stroke-dasharray: 987;
+  stroke-dashoffset: 987;
+  animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(2){
+  stroke-dasharray: 967;
+  stroke-dashoffset: 967;
+  animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(3){
+  stroke-dasharray: 1143;
+  stroke-dashoffset: 1143;
+  animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(4){
+  stroke-dasharray: 1131;
+  stroke-dashoffset: 1131;
+  animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(5){
+  stroke-dasharray: 1024;
+  stroke-dashoffset: 1024;
+  animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(6){
+  stroke-dasharray: 967;
+  stroke-dashoffset: 967;
+  animation: line-anim 2s ease forwards;
+}
+
+@keyframes line-anim{
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill{
+  from{
+    fill:transparent;
+  }
+  to{
+    fill: white;
+  }
+}
